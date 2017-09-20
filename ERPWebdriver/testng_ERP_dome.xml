@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="dome_suite1">
+<listeners>
+ <listener class-name="com.erp.TestUtils.ErpTestListener" />
+</listeners>
+   <test name="Regression">
+     <classes>
+        <class name="com.erp.TestUtils.AftestErpTest"/>
+        <class name="com.erp.test.AddorEdit_User_Test"/>
+        <class name="com.erp.test.QueryOrDelete_User_Test"/>
+     </classes>
+   </test>
+    <suite-files>
+   <suite-file path="target/surefire-reports/testng-failed.xml"/>
+   </suite-files>
+</suite>
